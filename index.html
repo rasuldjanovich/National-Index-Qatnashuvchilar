@@ -18,13 +18,13 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
-
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
 
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -41,7 +41,7 @@
                                 <img src="assets/images/Untitled-2.png" alt="" height="50">
                             </span>
                             <span class="logo-lg">
-                                <img class="mt-2" src="assets/images/logo.svg" alt="" height="60">
+                                <img class="mt-3" src="assets/images/logo.svg" alt="" height="60">
                             </span>
                         </a>
                     </div>
@@ -94,15 +94,15 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12">
-                                <span class="align-middle">Russian</span>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="uz">
+                                <img src="assets/images/flags/uzbekistan.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">O'zbek</span>
                             </a>
 
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="uz">
-                                <img src="assets/images/flags/uzbekistan.jpg" alt="user-image" class="me-1" height="12">
-                                <span class="align-middle">Uzbekistan</span>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">Русский</span>
                             </a>
 
                             <!-- item-->
@@ -268,21 +268,25 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class='bx bx-user'></i>
-                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            <div class="d-flex mt-3">
+                                <i class='bx bx-user'></i>
+                                <p class="mx-1 mt-1">O'ktam Yaqubov</p>
+                                <i class="mt-1 mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </div>
+                            
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i>
-                                <span key="t-profile">Профиль</span></a>
+                                <span key="t-profile">Profil sozlamalari</span></a>
                             <a class="dropdown-item d-block" href="#"><span
                                     class="badge bg-success float-end">11</span><i
                                     class="bx bx-wrench font-size-16 align-middle me-1"></i> <span
-                                    key="t-settings">Настройки</span></a>
+                                    key="t-settings">Sozlamalar</span></a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-danger" href="auth-login-2.html"><i
                                     class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
-                                    key="t-logout">Выйти</span></a>
+                                    key="t-logout">Chiqish</span></a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +301,7 @@
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
-                    <ul class="metismenu list-unstyled" id="side-menu">
+                    <ul class="metismenu list-unstyled mt-3" id="side-menu">
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
@@ -309,102 +313,32 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="fa-light fa-sitemap"></i>
-                                <span key="t-dashboards">Tashkilotlar</span>
+                                <span key="t-dashboards">Boshqaruv reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
-                                <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
+                                <li><a href="reytinglar-ro'yxati.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="#">Hisobot</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="viloyat.html" class="waves-effect">
                                 <i class="bx bx-file"></i>
-                                <span key="t-file-manager">Viloyat</span>
+                                <span key="t-file-manager">Ma'lumotlar</span>
                             </a>
                         </li>
 
-                        <!-- <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-user'></i>
-                                <span key="t-dashboards">Эксперты</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="experts-table.html">Команды</a></li>
-                                <li><a href="expert-members.html">Члены-эксперты</a></li>
-                            </ul>
-                        </li> -->
-
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Baholar reestri</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
-                                <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
-                                <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Yangiliklar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
-                                <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Ilovalar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bxs-user-detail"></i>
-                                <span key="t-ecommerce">Foydalanuvchilar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="royxat-azolari.html" key="t-products">Roʼyxat aʼzolari</a></li>
-                                <li><a href="masul-shaxslarr.html" key="t-products">Masʼul shaxslar</a></li>
-                                <li><a href="#" key="t-product-detail">Mutaxassislar roʼyxati</a>
-                                </li>
-                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-cog'></i>
-                                <span key="t-crypto">Sozlamalar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li>
-                            <a href="baholash-indikator.html" class="waves-effect">
+                            <a href="viloyat.html" class="waves-effect">
                                 <i class="bx bx-file"></i>
-                                <span key="t-file-manager">Baholash indikatorlari</span>
+                                <span key="t-file-manager">Profil sozlamalari</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="viloyat.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Parolni yangilash</span>
                             </a>
                         </li>
                     </ul>
@@ -433,113 +367,25 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
+                    <div class="row mt-2">
                         <div class="col-xl-12">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
-
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
-
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
-
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
-
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="d-sm-flex flex-wrap">
-                                        <h4 class="card-title mb-4">Email Sent</h4>
-                                        <div class="ms-auto">
-                                            <ul class="nav nav-pills">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Week</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Month</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Year</a>
-                                                </li>
-                                            </ul>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="assets/images/Untitled-2.png" alt="" width="85">
+                                            </div>
+                                            <div class="mx-2">
+                                                <h5 class="logo-textt mt-2">Oliy Ta'lim Muassasalarining Ilmiy Ishlari
+                                                    va Innovatsion Faoliyati Natijalarini Baholash Platformasi</h5>
+                                                <h5>Toshkent</h5>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <btton class="btn btn-primary">Batafsil ma'lumot</btton>
                                         </div>
                                     </div>
-
-                                    <div id="stacked-column-chart" class="apex-charts"
-                                        data-colors='["--bs-primary", "--bs-warning", "--bs-success"]' dir="ltr"></div>
                                 </div>
                             </div>
                         </div>
@@ -550,239 +396,247 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-4">Latest Transaction</h4>
                                     <div class="table-responsive">
                                         <table class="table align-middle table-nowrap mb-0">
                                             <thead class="table-light">
                                                 <tr>
-                                                    <th style="width: 20px;">
+                                                    <!-- <th style="width: 20px;">
                                                         <div class="form-check font-size-16 align-middle">
                                                             <input class="form-check-input" type="checkbox"
                                                                 id="transactionCheck01">
                                                             <label class="form-check-label"
                                                                 for="transactionCheck01"></label>
                                                         </div>
-                                                    </th>
-                                                    <th class="align-middle">Order ID</th>
-                                                    <th class="align-middle">Billing Name</th>
-                                                    <th class="align-middle">Date</th>
-                                                    <th class="align-middle">Total</th>
-                                                    <th class="align-middle">Payment Status</th>
-                                                    <th class="align-middle">Payment Method</th>
-                                                    <th class="align-middle">View Details</th>
+                                                    </th> -->
+                                                    <th class="align-middle">ID</th>
+                                                    <th class="align-middle">Reyting nomi</th>
+                                                    <th class="align-middle">Boshlanish sanasi</th>
+                                                    <th class="align-middle">Tugash sanasi</th>
+                                                    <th class="align-middle">Holati</th>
+                                                    <th class="align-middle">Amallar</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck02">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck02"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2540</a> </td>
+                                                    <td>1</td>
                                                     <td>Neal Matthews</td>
-                                                    <td>
-                                                        07 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $400
-                                                    </td>
+                                                    <td>07.07.2023</td>
+                                                    <td>07.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
+                                                            class="badge badge-pill badge-soft-success font-size-11">Faol</span>
                                                     </td>
                                                     <td>
-                                                        <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck03">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck03"></label>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
                                                         </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2541</a> </td>
-                                                    <td>Jamal Burnett</td>
-                                                    <td>
-                                                        07 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $380
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-danger font-size-11">Chargeback</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-visa me-1"></i> Visa
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck04">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck04"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2542</a> </td>
-                                                    <td>Juan Mitchell</td>
-                                                    <td>
-                                                        06 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $384
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-paypal me-1"></i> Paypal
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck05">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck05"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2543</a> </td>
-                                                    <td>Barry Dick</td>
-                                                    <td>
-                                                        05 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $412
-                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Neal Matthews</td>
+                                                    <td>08.07.2023</td>
+                                                    <td>08.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
                                                     </td>
                                                     <td>
-                                                        <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck06">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck06"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2544</a> </td>
-                                                    <td>Ronald Taylor</td>
-                                                    <td>
-                                                        04 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $404
-                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Neal Matthews</td>
+                                                    <td>09.07.2023</td>
+                                                    <td>09.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-warning font-size-11">Refund</span>
+                                                            class="badge badge-pill badge-soft-success font-size-11">Faol</span>
                                                     </td>
                                                     <td>
-                                                        <i class="fab fa-cc-visa me-1"></i> Visa
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck07">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck07"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2545</a> </td>
-                                                    <td>Jacob Hunter</td>
-                                                    <td>
-                                                        04 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $392
-                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Neal Matthews</td>
+                                                    <td>10.07.2023</td>
+                                                    <td>10.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
                                                     </td>
                                                     <td>
-                                                        <i class="fab fa-cc-paypal me-1"></i> Paypal
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Neal Matthews</td>
+                                                    <td>11.07.2023</td>
+                                                    <td>11.07.2024</td>
+                                                    <td>
+                                                        <span
+                                                            class="badge badge-pill badge-soft-success font-size-11">Faol</span>
                                                     </td>
                                                     <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Neal Matthews</td>
+                                                    <td>12.07.2023</td>
+                                                    <td>12.07.2024</td>
+                                                    <td>
+                                                        <span
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html"
+                                                                        class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Ma'lumotlarni kiritish</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
+                                                                        tahrirlash</a></li>
+                                                                <li><a href="masul-shaxslar.html" class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
