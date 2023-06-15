@@ -5809,7 +5809,7 @@ input.checkbox-toggle-round-flat:checked + label:after {
   margin-left: 48px;
   background-color: #8ce196;
 }
-/* 
+
 
 .btn-sub {
     float: right;
@@ -5867,7 +5867,7 @@ label {
 .formula {
     color: #909090;
     font-size: 12px;
-} */
+}
 
 .logo-textt {
     width: 280px;
