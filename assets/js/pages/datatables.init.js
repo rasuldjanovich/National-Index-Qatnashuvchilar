@@ -1,8 +1,8 @@
 $(document).ready(function () {
     dTable = $("#datatable").DataTable({
-        "dom": 'rtip'
-        //paging: true,
-        //info: false
+        // "dom": 'rtip'
+        // paging: true,
+        // info: false
     }), $("#datatable-buttons").DataTable({
         lengthChange: !1,
         buttons: ["copy", "excel", "pdf", "colvis"]
