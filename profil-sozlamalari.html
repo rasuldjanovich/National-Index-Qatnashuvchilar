@@ -50,7 +50,7 @@
                         id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
-                    
+
                     <a class="mt-4" href="https://phd.mininnovation.uz/" target="blank">Bosh sahifaga o'tish</a>
 
                     <!-- App Search-->
@@ -275,7 +275,7 @@
                                 <p class="mx-1 mt-1">O'ktam Yaqubov</p>
                                 <i class="mt-1 mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </div>
-                            
+
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
@@ -371,38 +371,84 @@
                             <div class="card">
                                 <div class="card-body">
                                     <form action="">
-                                        
+
                                         <div class="form-floating mb-3">
-                                            <input type="text" disabled class="form-control" id="floatingnameInput" placeholder="STIR ni kiriting..." required>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input type="text" disabled class="form-control" id="floatingnameInput" placeholder="To'liq ismingizni kiriting..." required>
-                                        </div>
-                                        
-                                        <div class="form-floating mb-3">
-                                            <input type="email" disabled class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <select disabled class="form-select" id="floatingSelectGrid"
+                                            aria-label="Floating label select example">
+                                                <option>O'zbekiston Milliy Universiteti</option>
+                                                <option>Samarqand Arxitektura-Qurilish instituti</option>
+                                                <option>Andijon Mashinasozlik instituti</option>
+                                                <option>Farg'ona Davlat Universiteti</option>
+                                                <option>Samarqand Davlat Chet El Tillar instituti</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Tashkilot nomi</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="date" disabled class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Role ni kiriting..." required>
+                                            <label for="floatingnameInput">Role kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Familiya ni kiriting..." required>
+                                            <label for="floatingnameInput">Familiya kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Ism ni kiriting..." required>
+                                            <label for="floatingnameInput">Ism kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="STIR ni kiriting..." required>
+                                            <label for="floatingnameInput">Otasining ismini kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="STIR ni kiriting..." required>
+                                            <label for="floatingnameInput">STIR kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="To'liq ismingizni kiriting..." required>
+                                            <label for="floatingnameInput">To'liq ism kiriting...</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" disabled class="form-control" id="floatingnameInput" placeholder="Kompaniya kiriting..." required>
+                                            <input readonly="" type="email" class="form-control" id="floatingnameInput"
+                                                placeholder="Elektron pochtangizni kiriting..." required>
+                                            <label for="floatingnameInput">Elektron pochta kiriting...</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" disabled class="form-control" id="floatingnameInput" placeholder="PNFL kiriting..." required>
+                                            <input disabled type="date" class="form-control" id="floatingnameInput"
+                                                placeholder="Elektron pochtangizni kiriting..." required>
+                                            <label for="floatingnameInput">Tug'ilgan kun, yil</label>
                                         </div>
-                                        
+
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Kompaniya kiriting..." required>
+                                            <label for="floatingnameInput">Kompaniya</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input readonly="" type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="PNFL kiriting..." required>
+                                            <label for="floatingnameInput">PNFL</label>
+                                        </div>
+
                                         <div class="mb-3 row">
                                             <div class="form-floating col-md-1">
-                                                <input class="form-control" type="text" disabled placeholder="AA"
+                                                <input readonly="" class="form-control" type="text" placeholder="AA"
                                                     id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">AA</label>
                                             </div>
                                             <div class="form-floating col-md-11">
-                                                <input class="form-control" type="text" disabled placeholder="AA"
+                                                <input readonly="" class="form-control" type="text" placeholder="AA"
                                                     id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">Pasport seriya</label>
                                             </div>
                                         </div>
 
@@ -412,33 +458,22 @@
                                                 <label for="example-text-input" class="col-md-2 col-form-label"></label>
                                             </div>
                                             <div class="form-floating col-md-11">
-                                                <input class="form-control" type="number" disabled placeholder="AA"
+                                                <input readonly="" class="form-control" type="number" placeholder="AA"
                                                     id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">Telefon raqami</label>
                                             </div>
                                         </div>
 
                                         <div class="form-floating mb-3">
                                             <select disabled class="form-select" id="floatingSelectGrid"
                                                 aria-label="Floating label select example">
-                                                <option selected>O'zbekiston Milliy Universiteti</option>
+                                                <option selected>Andijon Mashinasozlik Instituti</option>
                                                 <option value="1">Farg'ona Davlat Universiteti</option>
                                                 <option value="2">Samarqand Arxitektura-Qurilish Instituti</option>
-                                                <option value="3">Andijon Mashinasozlik Instituti</option>
+                                                <option value="3">O'zbekiston Milliy Universiteti</option>
                                             </select>
+                                            <label for="floatingSelectGrid">Tashkiloti</label>
                                         </div>
-
-                                        <div class="form-floating mb-3">
-                                            <select disabled class="form-select" id="floatingSelectGrid"
-                                                aria-label="Floating label select example">
-                                                <option selected>Qatnashuvchi</option>
-                                                <option value="1">Kardinator</option>
-                                                <option value="2">Mutaxassis</option>
-                                                <option value="3">Admin</option>
-                                                <option value="3">Xavfsizlik menejeri</option>
-                                            </select>
-                                        </div>
-                                        <!-- <button class="btn btn-success mb-3 mx-1 mt-4">Saqlash</button> -->
-
                                     </form>
                                 </div>
                             </div>
