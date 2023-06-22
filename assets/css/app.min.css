@@ -5873,4 +5873,10 @@ label {
     width: 280px;
 }
 
+.searchc {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
 /*# sourceMappingURL=app.min.css.map */
