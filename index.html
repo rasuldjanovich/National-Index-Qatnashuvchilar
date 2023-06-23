@@ -18,7 +18,19 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tiny script-->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
 
 </head>
 
@@ -48,7 +60,7 @@
                         id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
-                    
+
                     <a class="mt-4" href="https://phd.mininnovation.uz/" target="blank">Bosh sahifaga o'tish</a>
 
                     <!-- App Search-->
@@ -273,7 +285,7 @@
                                 <p class="mx-1 mt-1">O'ktam Yaqubov</p>
                                 <i class="mt-1 mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </div>
-                            
+
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
@@ -374,7 +386,8 @@
                                                 <img src="assets/images/milliy-institut.png" alt="" width="80">
                                             </div>
                                             <div class="mx-2">
-                                                <h5 class="logo-textt mt-2">Mirzo Ulug'bek nomidagi O'zbekiston Milliy universiteti</h5>
+                                                <h5 class="logo-textt mt-2">Mirzo Ulug'bek nomidagi O'zbekiston Milliy
+                                                    universiteti</h5>
                                                 <h5>Toshkent</h5>
                                             </div>
                                         </div>
@@ -435,17 +448,21 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
                                                             </ul>
@@ -459,7 +476,8 @@
                                                     <td>08.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol
+                                                            emas</span>
                                                     </td>
                                                     <td>
                                                         <div class="dropdown">
@@ -472,19 +490,25 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
+
+                                                                <li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -509,19 +533,25 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
+
+                                                                <li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -533,7 +563,8 @@
                                                     <td>10.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol
+                                                            emas</span>
                                                     </td>
                                                     <td>
                                                         <div class="dropdown">
@@ -546,19 +577,25 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
+
+                                                                <li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -583,19 +620,25 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
+
+                                                                <li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -607,7 +650,8 @@
                                                     <td>12.07.2024</td>
                                                     <td>
                                                         <span
-                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol emas</span>
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Faol
+                                                            emas</span>
                                                     </td>
                                                     <td>
                                                         <div class="dropdown">
@@ -620,19 +664,25 @@
                                                                         class="dropdown-item"><i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Ma'lumotlarni kiritish</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item"><i
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item"><i
                                                                             class="mdi mdi-pencil font-size-16 text-success me-1"></i></i>Ma'lumotlarni
                                                                         tahrirlash</a></li>
-                                                                <li><a href="baholash-indikatorlari.html" class="dropdown-item">
+                                                                <li><a href="baholash-indikatorlari.html"
+                                                                        class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
                                                                 <li><a href="hisobot.html" class="dropdown-item"><i
                                                                             class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                         Harakatlar tarixi</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li><a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg"><i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
                                                                         Shikoyat</a></li>
+
+                                                                <li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -646,6 +696,37 @@
                         </div>
                     </div>
                     <!-- end row -->
+
+                    <!--  Modal example -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myLargeModalLabel">Shikoyat</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form action="" class="needs-validation">
+                                    <div class="modal-body">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Title">
+                                            <label for="floatingnameInput">Shikoyat mavzusi</label>
+                                        </div>
+                                        <label for="">Batafsil</label>
+                                        <textarea required id="mytextarea"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success"
+                                            data-bs-dismiss="modal">Saqlash</button>
+                                        <button class="btn btn-danger">Bekor qilish</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- container-fluid -->
             </div>

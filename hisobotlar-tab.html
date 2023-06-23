@@ -22,6 +22,16 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Tiny script-->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
+
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -395,9 +405,14 @@
                                                                 <i
                                                                     class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                 Batafsil ma'lumot</a></li>
-                                                        <li><a href="#" class="dropdown-item"><i
+                                                        <li>
+                                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target=".bs-example-modal-lg">
+                                                                <i
                                                                     class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                Statusni o'zgartirish</a>
+                                                                Statusni o'zgartirish
+                                                            </a>
+                                                        </li>
                                                         </li>
                                                         <li><a href="hisobot.html" class="dropdown-item"><i
                                                                     class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
@@ -425,9 +440,14 @@
                                                                 <i
                                                                     class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                 Batafsil ma'lumot</a></li>
-                                                        <li><a href="#" class="dropdown-item"><i
+                                                        <li>
+                                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target=".bs-example-modal-lg">
+                                                                <i
                                                                     class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                Statusni o'zgartirish</a></li>
+                                                                Statusni o'zgartirish
+                                                            </a>
+                                                        </li>
                                                         <li><a href="hisobot.html" class="dropdown-item"><i
                                                                     class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                 Harakatlar tarixi</a></li>
@@ -440,8 +460,8 @@
                                             <td>Andijon Mashinasozlik instituti</td>
                                             <td>09.07.2023</td>
                                             <td>
-                                                <span
-                                                    class="badge badge-pill badge-soft-warning font-size-11">Ko'rib chiqilmoqda</span>
+                                                <span class="badge badge-pill badge-soft-warning font-size-11">Ko'rib
+                                                    chiqilmoqda</span>
                                             </td>
                                             <td>
                                                 <div class="dropdown">
@@ -454,9 +474,14 @@
                                                                 <i
                                                                     class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                 Batafsil ma'lumot</a></li>
-                                                        <li><a href="#" class="dropdown-item"><i
+                                                        <li>
+                                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target=".bs-example-modal-lg">
+                                                                <i
                                                                     class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                Statusni o'zgartirish</a></li>
+                                                                Statusni o'zgartirish
+                                                            </a>
+                                                        </li>
                                                         <li><a href="hisobot.html" class="dropdown-item"><i
                                                                     class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                 Harakatlar tarixi</a></li>
@@ -483,9 +508,14 @@
                                                                 <i
                                                                     class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                 Batafsil ma'lumot</a></li>
-                                                        <li><a href="#" class="dropdown-item"><i
+                                                        <li>
+                                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target=".bs-example-modal-lg">
+                                                                <i
                                                                     class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                Statusni o'zgartirish</a></li>
+                                                                Statusni o'zgartirish
+                                                            </a>
+                                                        </li>
                                                         <li><a href="hisobot.html" class="dropdown-item"><i
                                                                     class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                 Harakatlar tarixi</a></li>
@@ -512,9 +542,14 @@
                                                                 <i
                                                                     class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                 Batafsil ma'lumot</a></li>
-                                                        <li><a href="#" class="dropdown-item"><i
+                                                        <li>
+                                                            <a href="#" class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target=".bs-example-modal-lg">
+                                                                <i
                                                                     class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                Statusni o'zgartirish</a></li>
+                                                                Statusni o'zgartirish
+                                                            </a>
+                                                        </li>
                                                         <li><a href="hisobot.html" class="dropdown-item"><i
                                                                     class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
                                                                 Harakatlar tarixi</a></li>
@@ -556,6 +591,38 @@
                             </div>
                             <!-- end table-responsive -->
                         </div>
+
+                        <!--  Modal example -->
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="myLargeModalLabel">Hisobot holatini o'zgartirish
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <form action="" class="needs-validation" novalidate>
+                                        <div class="modal-body">
+                                            <label for="">Izoh qoldiring</label>
+                                            <textarea required id="mytextarea"></textarea>
+                                            <div class="invalid-feedback">
+                                                Majburiy maydon to'ldirilsin
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-danger">Qaytarish</button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ko'rib
+                                                chiqishga o'tkazish</button>
+                                            <button type="button" class="btn btn-success"
+                                                data-bs-dismiss="modal">Tasdiqlash</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
