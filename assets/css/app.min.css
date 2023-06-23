@@ -1513,7 +1513,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
 .waves-circle {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(circle, #fff 100%, #000 100%)
+    /* -webkit-mask-image: -webkit-radial-gradient(circle, #fff 100%, #000 100%) */
 }
 
 .waves-button,
@@ -1569,7 +1569,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
 }
 
 .waves-float {
-    -webkit-mask-image: none;
+    /* -webkit-mask-image: none; */
     -webkit-box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, .12);
     box-shadow: 0 1px 1.5px 1px rgba(0, 0, 0, .12);
     -webkit-transition: all .3s;
